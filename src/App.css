@@ -1,1 +1,37 @@
+* {
+  color: palevioletred;
+  background-color: white;
+  list-style: none;
+  text-decoration: none;
+}
 
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  padding-left: 300px;
+}
+
+ul {
+  display: flex;
+  width: 1080px;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 19px;
+  transition: 0.5s;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
