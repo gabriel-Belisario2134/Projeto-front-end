@@ -8,7 +8,7 @@ const images = [
     '/imagens/shibuya.jpg'
   ];
   
-  function Home() {
+  function Carrossel() {
     const [currentIndex, setCurrentIndex] = useState(0);
   
     const prevImage = () => {

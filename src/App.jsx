@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import Arte from './components/arteEstetica/arte';
 import Home from './components/logoHome/Home';
 import Culinaria from './components/culinaria/culinaria';
-import Header from './components/header/header';
+import Header from './components/headerFooter/header';
 import Login from './components/loginForum/login'; 
 import PontosTuristicos from './components/pontosTuristicos/pontosTuristicos';
 import TradicoesFestivais from './components/tradicoesFestivais/tradicoesFestivais';
+import Footer from './components/headerFooter/footer';
 
 function App() {
   
@@ -41,6 +42,8 @@ function App() {
         <Route path="/pontosturisticos" element={<PontosTuristicos />} />
         <Route path="/tradicoesFestivais" element={<TradicoesFestivais />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 }

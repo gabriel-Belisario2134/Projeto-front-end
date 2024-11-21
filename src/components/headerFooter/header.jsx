@@ -11,11 +11,9 @@ const Header = () => {
           <li><Link to="/pontosturisticos">Pontos turisticos</Link></li>
           <li><Link to="/tradicoesFestivais">Tradições e festivais</Link></li>
           <li><Link to="/culinaria">Culinaria</Link></li>
-          <li><Link to="">Cultura POP</Link></li>
           <li><Link to="/login">Login</Link></li>
         </ul>
       </nav>
-  
     </header>
     );
 }
