@@ -4,7 +4,7 @@ import './Home.css';
 
 const images = [
   '/imagens/comida.png',
-  '/imagens/kakunodate.png',
+  '/imagens/Kakunodate.png',
   '/imagens/osaka.jpg',
   '/imagens/sakura.jpg',
   '/imagens/shibuya.jpg'
@@ -28,9 +28,6 @@ function Home() {
         <img src={images[currentIndex]} alt={`Imagem ${currentIndex + 1}`} />
       </div>
       <button onClick={nextImage} className="next-button">{'>'}</button>
-      <div>
-        <h1>AAAAAA</h1>
-      </div>
     </div>
   );
 }

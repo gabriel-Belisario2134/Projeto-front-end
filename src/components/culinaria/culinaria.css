@@ -1,0 +1,77 @@
+/* culinaria.css */
+
+/* Estrutura geral */
+.paginaCulinaria {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Centraliza e limita a largura */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Título principal */
+.tituloPrincipal {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #cf275a;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulo */
+.subtitulo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #290e02;
+    padding-bottom: 10px;
+}
+
+/* Receitas */
+.receitas {
+    display: flex;
+    flex-direction: column; /* Organiza os cards verticalmente */
+    align-items: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.receita {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    width: 100%; /* Ocupa toda a largura permitida */
+    max-width: 600px; /* Limita a largura máxima */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.receita:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagens */
+.receita img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Títulos das receitas */
+.receita h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #df668a;
+}
+
+/* Texto das receitas */
+.receitaTexto {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #3d0303;
+    text-align: left; /* Alinha o texto das receitas à esquerda */
+}
+
+

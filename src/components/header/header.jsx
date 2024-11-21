@@ -10,7 +10,7 @@ const Header = () => {
           <li><Link to="/arte">Arte e Estetica</Link></li>
           <li><Link to="/pontosturisticos">Pontos turisticos</Link></li>
           <li><Link to="">Tradições e festivais</Link></li>
-          <li><Link to="">Culinaria</Link></li>
+          <li><Link to="/culinaria">Culinaria</Link></li>
           <li><Link to="">Cultura POP</Link></li>
           <li><Link to="">Login</Link></li>
         </ul>
