@@ -1,0 +1,52 @@
+/* Título principal */
+  .pontos-turisticos-title {
+    font-size: 2.5em;
+    color: #cf275a; /* Cor inspirada em tons tradicionais japoneses */
+    margin-top: 40px
+  }
+  
+  /* Descrição do conteúdo */
+  .pontos-turisticos-description {
+    font-size: 1.2em;
+    color: #290e02;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para cada item de ponto turístico */
+  .pontos-turisticos-item {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(170, 29, 135);
+    margin-bottom: 40px;
+  }
+  
+  /* Títulos das seções de cada ponto turístico */
+  .pontos-turisticos-subtitle {
+    font-size: 1.8em;
+    color: #cf275a;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Parágrafos de descrição de cada ponto turístico */
+  .pontos-turisticos-text {
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  /* Links para mais informações */
+  .pontos-turisticos-link {
+    font-size: 16px;
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .pontos-turisticos-link:hover {
+    color: #ff4500; /* Destaque ao passar o mouse */
+    border-color: #ff4500;
+  }

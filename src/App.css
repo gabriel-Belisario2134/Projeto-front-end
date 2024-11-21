@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Kdam+Thmor+Pro&display=swap');
+
 * {
   color: palevioletred;
-  background-color: white;
   list-style: none;
   text-decoration: none;
+  font-family: "Kaisei Decol", serif;
 }
 
 .header {

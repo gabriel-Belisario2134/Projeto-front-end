@@ -1,0 +1,56 @@
+
+  /* Título principal */
+  .tradicoes-festivais-title {
+    font-size: 2.5em;
+    color: #cf275a; 
+  }
+  
+  /* Descrição geral */
+  .tradicoes-festivais-description {
+    font-size: 1.2em;
+    color: #290e02;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para cada item de tradição/festival */
+  .tradicoes-festivais-item {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 2px 8px rgb(170, 29, 135);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  /* Subtítulo para o nome do festival/tradição */
+  .tradicoes-festivais-subtitle {
+    font-size: 1.8em;
+    color: #cf275a;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Texto explicativo de cada tradição/festival */
+  .tradicoes-festivais-text {
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  /* Estilo para os links */
+  .tradicoes-festivais-link {
+    display: inline-block;
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1e90ff;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  
+  /* Efeito de hover nos links */
+  .tradicoes-festivais-link:hover {
+    color: #ff4500; /* Destaque ao passar o mouse */
+    border-color: #ff4500;
+  }

@@ -6,9 +6,9 @@ const Culinaria = () => {
         <div className="paginaCulinaria">
             <h1 className="tituloPrincipal">Culinária</h1>
 
-            <h2 className="subtitulo">
+            <p className="subtitulo">
                 Pratos típicos do Japão para conhecer as histórias e para fazer em casa!
-            </h2>
+            </p>
 
             <section className="receitas">
                 {/* Receita 1 */}
@@ -23,7 +23,7 @@ const Culinaria = () => {
                         O sushi é um dos pratos mais emblemáticos do Japão. Sua origem remonta ao século 8, como uma técnica de conservação de peixe, onde o peixe era fermentado com arroz para preservá-lo. O sushi como o conhecemos hoje, com peixe fresco e arroz temperado com vinagre, se desenvolveu durante o período Edo (1603-1868), e se popularizou no Japão e no mundo inteiro.
                     </p>
                     <h3>Receita</h3>
-                    <ul className="ingredientes">
+                    <ol className="ingredientes">
                         <li>2 xícaras de arroz para sushi</li>
                         <li>2 ½ xícaras de água</li>
                         <li>2 colheres de sopa de vinagre de arroz</li>
@@ -32,7 +32,7 @@ const Culinaria = () => {
                         <li>Algas nori (folhas)</li>
                         <li>Peixe fresco (atum, salmão ou outro de sua escolha)</li>
                         <li>Wasabi e molho de soja</li>
-                    </ul>
+                    </ol>
                     <h3>Modo de Preparo</h3>
                     <p>Lave bem o arroz até que a água saia limpa. Cozinhe o arroz em uma panela de arroz ou em uma panela comum com a água.
                         Em uma tigela pequena, misture o vinagre de arroz, açúcar e sal. Aqueça até dissolver completamente.
@@ -56,7 +56,7 @@ const Culinaria = () => {
                         O ramen é uma sopa de macarrão que se originou na China, mas foi adotada e adaptada pelos japoneses, tornando-se um prato nacional. Durante o período pós-guerra no Japão, o ramen se tornou popular por ser uma comida rápida, acessível e deliciosa. Cada região do Japão tem sua própria variação de ramen, com diferentes caldos e acompanhamentos.
                     </p>
                     <h3>Receita</h3>
-                    <ul className="ingredientes">
+                    <ol className="ingredientes">
                         <li>200g de macarrão de ramen</li>
                         <li>1 litro de caldo de galinha ou porco</li>
                         <li>2 colheres de sopa de pasta de miso</li>
@@ -66,7 +66,7 @@ const Culinaria = () => {
                         <li>Cebolinha fatiada</li>
                         <li>Algas nori</li>
                         <li>Molho de soja</li>
-                    </ul>
+                    </ol>
                     <h3>Modo de Preparo</h3>
                     <p>Cozinhe o macarrão de ramen conforme as instruções da embalagem.
                         Em uma panela, adicione o caldo de galinha ou porco e leve ao fogo médio. Se desejar, adicione a pasta de miso para enriquecer o sabor.
@@ -89,7 +89,7 @@ const Culinaria = () => {
                         A tempura é um prato de fritura leve que se tornou popular no Japão no período Edo. Originalmente trazida pelos missionários portugueses, os japoneses a adaptaram para usar ingredientes locais e criar uma massa leve e crocante, perfeita para vegetais e frutos do mar.
                     </p>
                     <h3>Receita</h3>
-                    <ul className="ingredientes">
+                    <ol className="ingredientes">
                         <li>500g de camarões descascados</li>
                         <li>1 xícara de farinha de trigo</li>
                         <li>1 xícara de água gelada</li>
@@ -97,7 +97,7 @@ const Culinaria = () => {
                         <li>Vegetais variados (batata-doce, abóbora, berinjela, etc.)</li>
                         <li>Óleo para fritura</li>
                         <li>Molho de tempura (tentsuyu)</li>
-                    </ul>
+                    </ol>
                     <h3>Modo de Preparo</h3>
                     <p>Prepare os ingredientes, cortando-os em pedaços pequenos.
                         Em uma tigela, bata o ovo e adicione a água gelada. Misture bem.
@@ -121,13 +121,13 @@ const Culinaria = () => {
                         O onigiri é um lanche tradicional japonês, feito com arroz moldado em formato triangular ou redondo, muitas vezes recheado com ingredientes como umeboshi (ameixa em conserva), salmão grelhado ou atum com maionese, e envolto em algas nori.
                     </p>
                     <h3>Receita</h3>
-                    <ul className="ingredientes">
+                    <ol className="ingredientes">
                         <li>2 xícaras de arroz japonês</li>
                         <li>2 ½ xícaras de água</li>
                         <li>Sal a gosto</li>
                         <li>Algas nori</li>
                         <li>Recheios de sua preferência (umeboshi, salmão, atum, etc.)</li>
-                    </ul>
+                    </ol>
                     <h3>Modo de Preparo</h3>
                     <p>Cozinhe o arroz japonês e deixe esfriar um pouco.
                         Com as mãos umedecidas e levemente salgadas, molde o arroz em forma triangular ou redonda.
