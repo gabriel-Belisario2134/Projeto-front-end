@@ -1,11 +1,11 @@
 import React from 'react';
 import './Home.css';
-// import Carrossel from '../carrossel/carrossel';
+import Carrossel from '../carrossel/carrossel';
 
 const Home = () => {
   return (
     <div className="home-container">
-      {/* <Carrossel /> */}
+      <div><Carrossel /></div>
       <section className="home-content">
         <div className="home-section">
           <h2 className="home-section-title">Tradições Japonesas</h2>
