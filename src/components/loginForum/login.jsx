@@ -54,5 +54,5 @@ const Login = ({ onLogin }) => {
   );
 };
 
-// Exportação correta do componente
+
 export default Login;
