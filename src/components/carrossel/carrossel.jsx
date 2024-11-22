@@ -3,7 +3,6 @@ import './carrossel.css';
 
 const ImageCarousel = () => {
   const images = [
-    '/imagens/comida.png',
   '/imagens/Kakunodate.png',
   '/imagens/osaka.jpg',
   '/imagens/sakura.jpg',
@@ -15,7 +14,7 @@ const ImageCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1 
       );
     }, 5000); // troca de imagem a cada 5 segundos
 

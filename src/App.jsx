@@ -21,28 +21,27 @@ function App() {
     localStorage.setItem('token', token);  // salva no localStorage
   };
 
-
-
   return (
     <BrowserRouter>
       <Header />
 
+
       <Routes>
         <Route path="/home" element={<Home />} />
         
-        {/* Rota de Login */}
+        {/* rota de Login */}
         <Route
           path="/login"
           element={token ? <Navigate to="/forum" /> : <Login onLogin={handleLogin} />} // se token for verdadeiro, redireciona para a rota de fórum
         />
         
-        {/* Rota de Cadastro */}
+        {/* rota de Cadastro */}
         <Route
           path="/cadastro"
-          element={token ? <Navigate to="/forum" /> : <Cadastro />}
+          element={token ? <Navigate to="/forum" /> : <Cadastro />} 
         />
         
-        {/* Rota de Fórum */}
+        {/* rota de Fórum */}
         <Route
           path="/forum"
           element={token ? <Forum token={token}  /> : <Navigate to="/login" />}
