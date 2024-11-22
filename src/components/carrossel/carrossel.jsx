@@ -9,7 +9,7 @@ const ImageCarousel = () => {
   '/imagens/shibuya.jpg'
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0); // indice da imagem atual
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,8 +19,7 @@ const ImageCarousel = () => {
     }, 5000); // troca de imagem a cada 5 segundos
 
     return () => clearInterval(interval);
-  }, [images.length]);
-
+  }, [images.length]); // atualiza o intervalo sempre que o array de imagens mudar
 
   return (
   <div className="carousel">
@@ -32,6 +31,5 @@ const ImageCarousel = () => {
     </div>
   );
 };
-
 
 export default ImageCarousel;
