@@ -33,7 +33,7 @@ function App() {
         {/* Rota de Login */}
         <Route
           path="/login"
-          element={token ? <Navigate to="/forum" /> : <Login onLogin={handleLogin} />}
+          element={token ? <Navigate to="/forum" /> : <Login onLogin={handleLogin} />} // se token for verdadeiro, redireciona para a rota de fórum
         />
         
         {/* Rota de Cadastro */}
