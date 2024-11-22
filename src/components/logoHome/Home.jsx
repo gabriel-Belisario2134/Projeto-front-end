@@ -1,34 +1,38 @@
 import React from 'react';
 import './Home.css';
-import Carrossel from '../carrossel/carrossel';
+import ImageCarousel from '../carrossel/carrossel';
+import { Link } from 'react-router-dom'; // Importando o Link
 
 const Home = () => {
   return (
     <div className="home-container">
-      <div><Carrossel /></div>
+      <div><ImageCarousel /></div>
       <section className="home-content">
         <div className="home-section">
-          <h2 className="home-section-title">Tradições Japonesas</h2>
+          <h2 className="home-section-title">Artes</h2>
           <p className="home-section-text">
-            O Japão é um país com uma rica história cultural e espiritual. Descubra as tradições que formam a base da sociedade japonesa e como elas influenciam o cotidiano.
+            O Japão possui uma tradição artística profunda, que inclui a caligrafia, pintura, cerâmica e outras formas de expressão cultural. Explore como essas artes refletem a espiritualidade e a história do país, influenciando gerações até os dias atuais.
           </p>
-          <a href="/tradicoes" className="home-link">Saiba mais sobre as tradições</a>
+
+          <Link to="/arte" className="home-link">Saiba mais sobre as artes</Link> {/* Alterado para Link */}
         </div>
 
         <div className="home-section">
           <h2 className="home-section-title">Festivais Japoneses</h2>
           <p className="home-section-text">
-            Os festivais do Japão são uma fusão vibrante de cores, música e espiritualidade. Junte-se a nós para explorar as principais celebrações e suas significados profundos.
+            Os festivais do Japão são vibrantes, combinando cores, música e espiritualidade. Explore as principais celebrações, seus significados e como elas são celebradas em todo o país.
           </p>
-          <a href="/festivais" className="home-link">Descubra os festivais</a>
+
+          <Link to="/tradicoesFestivais" className="home-link">Descubra os festivais</Link> {/* Alterado para Link */}
         </div>
 
         <div className="home-section">
           <h2 className="home-section-title">Culinária Japonesa</h2>
           <p className="home-section-text">
-            A gastronomia do Japão é conhecida por sua delicadeza e equilíbrio. Conheça os pratos tradicionais e os segredos da cozinha japonesa.
+            A gastronomia do Japão é uma mistura de delicadeza e equilíbrio. Conheça os pratos tradicionais e os sabores que definem a culinária japonesa em suas diversas formas.
           </p>
-          <a href="/culinaria" className="home-link">Explore a culinária japonesa</a>
+
+          <Link to="/culinaria" className="home-link">Explore a culinária japonesa</Link> {/* Alterado para Link */}
         </div>
       </section>
     </div>

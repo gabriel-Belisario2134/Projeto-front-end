@@ -1,43 +1,105 @@
-.carousel {
-    display: flex;
+/* home.css */
+
+/* Container principal */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Carrossel */
+.home-container > div {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+/* Seção de conteúdo */
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Estilo das seções dentro de home-content */
+.home-section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(170, 29, 135, 0.2);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover nas seções */
+.home-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(170, 29, 135, 0.4);
+}
+
+/* Títulos das seções */
+.home-section-title {
+  font-size: 1.8rem;
+  color: #cf275a; /* Cor de destaque, como no culinaria.css */
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto das seções */
+.home-section-text {
+  font-size: 1rem;
+  color: #290e02; /* Cor de texto, mais escura */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Links */
+.home-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #cf275a; /* Cor de fundo do link */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #a61b47; /* Cor mais escura no hover */
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
   }
-  
-  .image-container {
-    width: 600px;
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .home-section {
+    width: 90%;
   }
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .home-section-title {
+    font-size: 1.5rem;
   }
-  
-  button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2rem;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+
+  .home-section-text {
+    font-size: 0.9rem;
   }
-  
-  button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+
+  .home-link {
+    font-size: 0.9rem;
   }
-  
-  .prev-button {
-    margin-right: 20px;
-  }
-  
-  .next-button {
-    margin-left: 20px;
-  }
+}

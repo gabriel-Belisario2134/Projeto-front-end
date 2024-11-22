@@ -4,7 +4,11 @@ import './header.css'
 const Header = () => {
     return (
         <header className="header">
-      <h1 className="logo"><img src='/imagens/logo.png'/><Link to="/Home"></Link></h1>
+       <h1 className="logo">
+        <Link to="/home">
+          <img src='/imagens/logo.png' alt="Logo" />
+        </Link>
+      </h1>
       <nav>
         <ul className="nav">
           <li><Link to="/arte">Arte e Estetica</Link></li>
