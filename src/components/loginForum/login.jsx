@@ -1,30 +1,31 @@
 import React, { useState } from "react";
-import "./login.css"; // Usando o mesmo CSS
+import "./login.css"; 
 
+// Componente de login para armazenar os dados
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [mensagem, setMensagem] = useState("");
 
   const handleLogin = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // impede o comportamento padrão do formulário
 
     try {
-      const response = await fetch("http://localhost:3000/api/login", {
+      const response = await fetch("http://localhost:3000/api/login", { //endpoint de login
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, senha }),
+        body: JSON.stringify({ email, senha }), //corpo da requisiçao em json
       });
 
-      const data = await response.json();
+      const data = await response.json(); //resposta em json
 
-      if (response.ok) {
-        setMensagem(data.message);
-        onLogin("token_exemplo"); // Simulando um token
+      if (response.ok) { //verifica se o login foi bem sucedido
+        setMensagem(data.message); // mensagem de sucesso
+        onLogin("token_exemplo"); //  token simulado
       } else {
-        setMensagem(data.message);
+        setMensagem(data.message); // mensagem de erro
       }
     } catch (error) {
       setMensagem("Erro ao conectar com o servidor.");

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Importando useNavigate
-import "./login.css"; // Importando o mesmo CSS
+import "./login.css"; 
 
-const Cadastro = () => {
+const Cadastro = () => { // Componente de cadastro para armazenar os dados
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [confirmarSenha, setConfirmarSenha] = useState("");
   const [mensagem, setMensagem] = useState("");
 
-  const navigate = useNavigate(); // Inicializando o useNavigate
+  const navigate = useNavigate(); // Inicializando o useNavigate para redirecionar
 
   const handleCadastro = async (e) => {
     e.preventDefault();
@@ -20,7 +20,7 @@ const Cadastro = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/api/cadastro", {
+      const response = await fetch("http://localhost:3000/api/cadastro", { // Endpoint de cadastro
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const Cadastro = () => {
         // Redirecionando para a página do fórum após o cadastro
         setTimeout(() => {
           navigate("/forum");
-        }, 1000); // Redireciona após 1 segundo (dá tempo de ver a mensagem)
+        }, 1000); // redireciona após 1 segundo (dá tempo de ver a mensagem)
       } else {
         setMensagem(data.message); // Mensagem de erro
       }
@@ -76,7 +76,7 @@ const Cadastro = () => {
         <button type="submit">Cadastrar</button>
       </form>
 
-      {mensagem && <p>{mensagem}</p>}
+      {mensagem && <p>{mensagem}</p>} 
     </div>
   );
 };

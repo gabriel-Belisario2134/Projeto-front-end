@@ -17,17 +17,18 @@ const ImageCarousel = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Troca de imagem a cada 5 segundos
+    }, 5000); // troca de imagem a cada 5 segundos
 
     return () => clearInterval(interval);
   }, [images.length]);
 
+
   return (
-    <div className="carousel">
+  <div className="carousel">
       <img
         className="carousel-image"
         src={images[currentIndex]}
-        alt={`Imagem ${currentIndex + 1}`}
+        alt={`Imagem ${currentIndex + 1}`} 
       />
     </div>
   );

@@ -21,11 +21,7 @@ function App() {
     localStorage.setItem('token', token);  // salva no localStorage
   };
 
-  // Função para limpar o token (logout)
-  const handleLogout = () => {
-    setToken(null);
-    localStorage.removeItem('token'); // Remove do localStorage
-  };
+
 
   return (
     <BrowserRouter>
@@ -49,7 +45,7 @@ function App() {
         {/* Rota de Fórum */}
         <Route
           path="/forum"
-          element={token ? <Forum token={token} onLogout={handleLogout} /> : <Navigate to="/login" />}
+          element={token ? <Forum token={token}  /> : <Navigate to="/login" />}
         />
 
         <Route path="/arte" element={<Arte />} />
