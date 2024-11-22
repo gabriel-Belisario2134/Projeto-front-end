@@ -3,6 +3,8 @@
   .tradicoes-festivais-title {
     font-size: 2.5em;
     color: #cf275a; 
+    align-items: center;
+    text-align: center;
   }
   
   /* Descrição geral */
